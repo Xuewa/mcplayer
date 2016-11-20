@@ -1,0 +1,125 @@
+html{
+    font-size: 10px;
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+#main_div{
+    background-image: url("../imgs/background_mobile.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;height: 100%;
+}
+.top-nav{
+    width: 100%;
+    line-height: 3rem;
+    height: 3rem;
+}
+#go2list{
+    background-image: url("../imgs/icons/list.png");
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin:5px;
+    float: right;
+    width: 3rem;
+}
+.progress-round{
+    color: #035d30;
+    font-family: 微软雅黑,黑体;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+.music-progress{
+    width: 16rem;height: 16rem;
+    margin: 1rem auto;
+    background-color: rgba(199, 255, 243, 0.59);
+    border-radius: 50%;
+    position: relative;
+}
+.music-progress-inner{
+    width: 90%;height: 90%;
+    background-image: url("../imgs/round.png");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;left:50%;
+    margin-top:-7.2rem ;
+    margin-left:-7.2rem ;
+
+}
+
+.song-info{
+    color: #56bcd0;
+    font-family: 微软雅黑,黑体;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+.ctrl-btns{
+    width:100%;
+    text-align: center;
+}
+.button-model{
+    display: inline-block;
+    width: 3rem;  height: 2rem;
+    background-image: url("../imgs/icons/model.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: .5rem;
+}
+.play-btns{
+    height: 5rem;
+    line-height: 5rem;
+}
+.button-prev,.button-next{
+    display: inline-block;
+    width: 4rem;height: 4.5rem;
+    line-height: 5rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.button-prev{
+    background-image: url("../imgs/icons/prev.png");
+}
+.button-next{
+    background-image:url("../imgs/icons/next.png");
+}
+.button-pause{
+    background-image: url("../imgs/icons/pause.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 5rem;height: 5rem;
+    display: inline-block;
+    margin: .5rem 3.5rem;
+}
+.vol-btns{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 20rem;
+    height: 1.3rem;
+    border-radius: 1rem; /*这个属性设置使填充进度条时的图形为圆角*/
+    background: #56bcd0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 2rem;
+    width: 2rem;
+    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #6ac9d0;
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.2rem rgba(205, 224, 230, 0.5); /*设置边框*/
+    box-shadow: 0 .15rem .15em #3b4547; /*添加底部阴影*/
+}

@@ -1,5 +1,9 @@
 html, body {
-    background: lightpink;
+    /*background: lightpink;*/
+    /*background-image:url('../imgs/background_mobile.png');*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width:100%;
     height:100%;
     margin:0;
     padding:0
@@ -28,6 +32,7 @@ html, body {
     position:absolute;
     z-index:5;
     top:0;
+    /*background:url('../imgs/background_mobile.gif')*/
 }
 
 #music_list{

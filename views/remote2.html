@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <title>mcplayer遥控器</title>
+    <!--<link rel="stylesheet" href="./plugs/rangeslider/rangeslider.css">-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--<link rel="stylesheet" href="./plugs/roundSlider/roundslider.min.css">-->
+    <!--<link rel="stylesheet" href="./plugs/roundSlider/roundslider_custom.css">-->
+    <link rel="stylesheet" href="./css/player2.css">
+
+</head>
+<body>
+<section id="main_div">
+    <!--顶部导航-->
+    <nav class="top-nav">
+        <!--<a id="go2list" class="nav-btn">left</a>-->
+        <a id="go2list" class="nav-btn">&nbsp;</a>
+    </nav>
+    <!--圆形-->
+    <section class="progress-round">
+        <div class="music-progress">
+            <div class="music-progress-inner">
+
+            </div>
+        </div>
+        <div id="show_time">00:04/04:32</div>
+    </section>
+    <!--正在播放-->
+    <section class="song-info">
+        <div id="current_song">YOU ARE MY SUNSHINE--张杰</div>
+    </section>
+
+    <section class="ctrl-btns">
+        <a id="play_model" class="button-model"></a>
+        <div class="play-btns">
+            <a id="prev" class="button-prev"></a>
+            <a id="pause"class="button-pause"></a>
+            <a id="next" class="button-next"></a>
+        </div>
+        <!--音量-->
+        <div class="vol-btns">
+            <!--<span id="voice">/100</span>-->
+            <input type="range" id="range_volume" value="80" min="0" max="100" step="5"/>
+        </div>
+    </section>
+</div>
+
+
+
+
+<!-- jQuery library -->
+<script src="./js/libs/jquery-1.9.1.min.js"></script>
+<script src="./js/libs/socket.io.js"></script>
+<script src="./js/libs/vue.min.js"></script>
+<!--<script src="js/libs/jquery.qrcode.min.js"></script>-->
+<script src="js/utils/CM.js"></script>
+<!--<script src="plugs/rangeslider/rangeslider.min.js"></script>-->
+<!--自定义脚本-->
+<script src="js/rmc.js"></script>
+
+</body>
+</html>
